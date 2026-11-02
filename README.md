@@ -2,6 +2,20 @@
 
 我們不是把答案餵給 AI。我們把「怎麼做、怎麼驗、踩過什麼坑」寫成 AI 讀得懂的檔，讓下一輪的 AI 自己學會。
 
+## 一分鐘看懂
+
+整包都是寫給 AI 讀的說明檔，**沒有程式**。帶走的是資料夾，不是一段提示詞。
+
+四個技能，各舉一個用法：
+
+| 技能 | 丟什麼進去 | 拿回什麼 |
+|---|---|---|
+| [yt-digest](skills/yt-digest/SKILL.md) | 一支 40 分鐘的工具教學網址 | 一頁：主旨、4～6 個重點、片中的工具與數字、一句洞見。缺任何一區就算失敗 |
+| [copywriting-formula](skills/copywriting-formula/SKILL.md) | 「幫我寫一則介紹我自動化的貼文」 | 先套留帳體四段，第四段一定交代「怎麼知道它真的成了」，再挑 PAS／故事優先／迷思破解其中一套節奏 |
+| [claim-spotcheck](skills/claim-spotcheck/SKILL.md) | 別的 AI 交回來的 repo 清單、星數、「查無」 | 逐筆打 API 驗。我們實跑過：9 個 repo 有 4 個 404；號稱 180 星，實測 2 星 |
+| [skill-maker](skills/skill-maker/SKILL.md) | 一個你已經跑順的流程，例如會議錄音整理成紀要 | 一份 `SKILL.md`，下次換一個 AI 讀檔就會做 |
+
+四個剛好一圈：skill-maker 負責產技能，claim-spotcheck 負責擋 AI 亂給來源，另外兩個一個吸收、一個輸出。
 ## 能做到什麼
 
 | 你想做的 | 去哪 |
@@ -43,4 +57,14 @@
 
 把這個 repo 丟給你的 AI，說「照 START_HERE 做」。
 
+## 想再往下走
+
+這包是教材。同一套方法，我們另外拆成幾個可以單獨拿的開源：
+
+| repo | 管什麼 |
+|---|---|
+| [soplint](https://github.com/zaxardery8011-design/soplint) | 檢查你給 AI 定的規矩，不是檢查程式碼 |
+| [execution-proofs](https://github.com/zaxardery8011-design/execution-proofs) | AI 說「做完了」，去看檔案是不是真的在、是不是新的 |
+| [aiwff-checkup-public](https://github.com/zaxardery8011-design/aiwff-checkup-public) | 健檢你跟你的 AI 走到哪一關（測試版，會誤判） |
+| [line-persona](https://github.com/zaxardery8011-design/line-persona) | 想讓 AI 在 LINE 上回話，從這裡開始 |
 授權：MIT，見 [LICENSE](LICENSE)。
